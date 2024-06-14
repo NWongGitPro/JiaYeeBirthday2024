@@ -27,10 +27,12 @@
     color: #333;
 }
 
-.corner-image {
+.card-image {
     position: absolute;
     top: 10px;
     right: 10px;
     width: 50px;
     height: 50px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire area */
 }
