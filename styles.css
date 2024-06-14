@@ -9,7 +9,9 @@
     text-align: center; /* Center-align text horizontally */
     display: flex;
     justify-content: center; /* Center-align text vertically */
-    align-items: center;}
+    align-items: center;
+    position: relative;
+}
 
 .card-content {
     /* Additional styles for the content inside the card */
