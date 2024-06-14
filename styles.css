@@ -29,7 +29,7 @@
 
 .card-image {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 10px;
     width: 100px;
     height: 100px;
