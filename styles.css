@@ -14,6 +14,7 @@
 
 .card-content {
     /* Additional styles for the content inside the card */
+    position: relative
 }
 
 .card h2 {
