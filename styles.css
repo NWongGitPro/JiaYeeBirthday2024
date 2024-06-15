@@ -44,10 +44,9 @@ body {
 
 @media (max-width: 768px) {
     .card img {
-        width: 155px; /* Adjust width for smaller screens */
-        height: 155px; /* Adjust height for smaller screens */
-        top: 50%; /* Move the image down by 50% of its own height */
-        transform: translateY(20%); /* Move the image an additional 20% downwards */    }
+        width: 160px; /* Adjust width for smaller screens */
+        height: 160px; /* Adjust height for smaller screens */
+        top: 60%; /* Move the image down by 50% of its own height */
 }
 
 .card button {
