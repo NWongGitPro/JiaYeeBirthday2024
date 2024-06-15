@@ -41,6 +41,14 @@ body {
     height: 200PX;
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    .card img {
+        width: 150px; /* Adjust width for smaller screens */
+        height: 150px; /* Adjust height for smaller screens */
+    }
+}
+
 .card button {
     position: absolute;
     margin-top: 20px;
