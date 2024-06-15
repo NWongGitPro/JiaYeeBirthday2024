@@ -1,3 +1,7 @@
+:root {
+  color-scheme: only light;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -5,14 +9,6 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-}
-
-/* Override for dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1a1a1a; /* Dark mode background */
-        color: #fff; /* Dark mode text color */
-    }
 }
 
 .card {
@@ -39,10 +35,10 @@ body {
 }
 .card img {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 100PX;
-    height: 100PX;
+    bottom: 15px;
+    left: 15px;
+    width: 200PX;
+    height: 200PX;
     border-radius: 50%;
 }
 .card button {
