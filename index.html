@@ -7,9 +7,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f0f0f0" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#f0f0f0" media="(prefers-color-scheme: dark)">
-
 
     <!-- =============================================== -->
     <!-- 𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧 𝗧𝗜𝗧𝗟𝗘 -->
@@ -31,22 +28,28 @@
 <body>
 
     <!-- =============================================== -->
-    <!-- 𝗗𝗘𝗙𝗜𝗡𝗜𝗡𝗚 𝗧𝗛𝗘 𝗕𝗢𝗗𝗬 -->
+    <!-- 𝗗𝗘𝗙𝗜𝗡𝗜𝗡𝗚 𝗖𝗔𝗥𝗗 𝗖𝗢𝗡𝗧𝗘𝗡𝗧 -->
     <!-- =============================================== -->
     <div class="card" id="card1">
         <h1>Happy Birthday Jia Yee</h1>
         <p>Wishing you a wonderful day filled with joy and happiness!</p>
-        <img src="corner-image.png" alt="Happy Image">
+        <img src="retriever2.png" alt="Retriever Neutral">
         <button onclick="showNextCard()"> ➔ </button>
     </div>
 
+    <!-- =============================================== -->
+    <!-- 𝗗𝗘𝗙𝗜𝗡𝗜𝗡𝗚 𝗖𝗔𝗥𝗗 𝗖𝗢𝗡𝗧𝗘𝗡𝗧 -->
+    <!-- =============================================== -->
     <div class="card" id="card2" style="display: none;">
         <h1>Happy Birthday Jia Yee</h1>
         <p>May all your dreams come true on this special day!</p>
-        <img src="retriever2.PNG" alt="Happy Image">
+        <img src="retriever1.png" alt="Retriever Hand Raised">
         <button onclick="showNextCard()"> ➔ </button>
     </div>
 
+    <!-- =============================================== -->
+    <!-- 𝗗𝗘𝗙𝗜𝗡𝗜𝗡𝗚 𝗕𝗨𝗧𝗧𝗢𝗡 𝗔𝗖𝗧𝗜𝗢𝗡 -->
+    <!-- =============================================== -->
     <script>
         function showNextCard() {
             const card1 = document.getElementById('card1');
@@ -59,21 +62,6 @@
                 card2.style.display = 'block';
             }
         }
-    </script>
-    
-    <script>
-      function enforceLightMode() {
-        const lightStyles = `
-          body { background-color: #f0f0f0 !important; color: #000000 !important; }
-          .your-class { background-color: #f0f0f0 !important; color: #000000 !important; }
-        `;
-        const styleSheet = document.createElement("style");
-        styleSheet.type = "text/css";
-        styleSheet.innerText = lightStyles;
-        document.head.appendChild(styleSheet);
-      }
-    
-      enforceLightMode();
     </script>
 
 </body>
