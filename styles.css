@@ -7,6 +7,14 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Override for dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a; /* Dark mode background */
+        color: #fff; /* Dark mode text color */
+    }
+}
+
 .card {
     position: relative;
     width: 300px;
