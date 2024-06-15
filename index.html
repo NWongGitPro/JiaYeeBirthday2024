@@ -7,6 +7,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: dark)">
+
 
     <!-- =============================================== -->
     <!-- 𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧 𝗧𝗜𝗧𝗟𝗘 -->
@@ -59,11 +62,19 @@
     </script>
     
     <script>
-        // Check if dark mode is preferred
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            // Add 'force-light-mode' class to body
-            document.body.classList.add('force-light-mode');
-        }
+      function enforceLightMode() {
+        const lightStyles = `
+          body { background-color: #ffffff !important; color: #000000 !important; }
+          .your-class { background-color: #ffffff !important; color: #000000 !important; }
+        `;
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerText = lightStyles;
+        document.head.appendChild(styleSheet);
+      }
+    
+      enforceLightMode();
     </script>
+
 </body>
 </html>
