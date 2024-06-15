@@ -47,8 +47,8 @@ body {
     .card img {
         width: 155px; /* Adjust width for smaller screens */
         height: 155px; /* Adjust height for smaller screens */
-        transform: translate(-50%, 40%); /* Adjust vertical position for smaller screens */
-    }
+        top: 50%; /* Move the image down by 50% of its own height */
+        transform: translateY(20%); /* Move the image an additional 20% downwards */    }
 }
 
 .card button {
