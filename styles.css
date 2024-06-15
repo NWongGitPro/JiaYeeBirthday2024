@@ -31,7 +31,7 @@ body {
 .card img {
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    left: 50%;
     width: 230px;
     height: 230px;
     border-radius: 50%;
@@ -45,8 +45,8 @@ body {
     color: #fff;
     border: none;
     border-radius: 50%; /* Make it circular */
-    right:    0;
-    bottom:   0;
+    right:    10;
+    bottom:   10;
     cursor: pointer;
     display: flex;
 
