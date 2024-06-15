@@ -19,7 +19,8 @@ body {
 .card h1 {
     margin-top: 0;
     font-size: 30px;
-    color: #333;
+    /*color: #333;*/
+    color: #F5BD02;
     font-family: "Lobster", sans-serif;
 }
 .card p {
