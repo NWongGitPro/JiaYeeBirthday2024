@@ -7,9 +7,6 @@ body {
     background-color: #f0f0f0;
 }
 
-body.force-light-mode {
-    filter: invert(1) hue-rotate(180deg); /* Invert colors to simulate light mode */
-}
 .card {
     position: relative;
     width: 300px;
