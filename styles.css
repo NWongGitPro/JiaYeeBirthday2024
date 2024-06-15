@@ -37,7 +37,6 @@ body {
     position: absolute;
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, 20%); /* Adjust vertical position */
     width: 200px; /* Adjusted width for larger screens */
     height: 200px; /* Adjusted height for larger screens */
     border-radius: 50%;
