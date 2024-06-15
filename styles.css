@@ -33,20 +33,24 @@ body {
     color: #666;
     font-family: 'Open Sans', sans-serif;
 }
+
 .card img {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    width: 200px; /* Adjusted width for larger screens */
-    height: 200px; /* Adjusted height for larger screens */
-    border-radius: 50%;
+  width: 100%; /* Ensure the image scales within its container */
+  max-width: 160px; /* Adjust width for smaller screens */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position the image absolutely within its parent */
+  top: 30%; /* Adjust position vertically */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust centering */
 }
 
 @media (max-width: 768px) {
-    .card img {
-        width: 160px; /* Adjust width for smaller screens */
-        height: 160px; /* Adjust height for smaller screens */
-        top: 60%; /* Move the image down by 50% of its own height */
+  .card img {
+    width: 120px; /* Adjust width for smaller screens */
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    top: 20%; /* Adjust position vertically */
+  }
 }
 
 .card button {
