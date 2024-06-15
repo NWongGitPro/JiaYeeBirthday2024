@@ -37,18 +37,10 @@ body {
     position: absolute;
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, 20%); /* Adjust vertical position */
-    width: 200px; /* Adjusted width for larger screens */
-    height: 200px; /* Adjusted height for larger screens */
+    transform: translate(-50%, -20%); /* Adjust vertical position */
+    width: 155px; /* Adjusted width for larger screens */
+    height: 155px; /* Adjusted height for larger screens */
     border-radius: 50%;
-}
-
-@media (max-width: 768px) {
-    .card img {
-        width: 155px; /* Adjust width for smaller screens */
-        height: 155px; /* Adjust height for smaller screens */
-        top: 50%; /* Move the image down by 50% of its own height */
-        transform: translateY(20%); /* Move the image an additional 20% downwards */    }
 }
 
 .card button {
