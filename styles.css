@@ -45,8 +45,8 @@ body {
 
 @media (max-width: 768px) {
     .card img {
-        width: 150px; /* Adjust width for smaller screens */
-        height: 150px; /* Adjust height for smaller screens */
+        width: 155px; /* Adjust width for smaller screens */
+        height: 155px; /* Adjust height for smaller screens */
     }
 }
 
