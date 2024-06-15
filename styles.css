@@ -32,9 +32,9 @@ body {
 .card img {
     position: absolute;
     bottom: 10px;
-    left: 30px;
-    width: 190PX;
-    height: 190PX;
+    left: 10px;
+    width: 100PX;
+    height: 100PX;
     border-radius: 50%;
 }
 .card button {
