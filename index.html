@@ -57,5 +57,13 @@
             }
         }
     </script>
+    
+    <script>
+        // Check if dark mode is preferred
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            // Add 'force-light-mode' class to body
+            document.body.classList.add('force-light-mode');
+        }
+    </script>
 </body>
 </html>
