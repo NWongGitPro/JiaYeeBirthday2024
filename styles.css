@@ -35,10 +35,11 @@ body {
 }
 .card img {
     position: absolute;
-    bottom: 15px;
-    left: 15px;
-    width: 200PX;
-    height: 200PX;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjusted width for larger screens */
+    height: 200px; /* Adjusted height for larger screens */
     border-radius: 50%;
 }
 
