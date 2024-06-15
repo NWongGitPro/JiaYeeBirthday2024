@@ -1,49 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- ====================================================== -->
-<!-- DEFINING DOCUMENT SETTINGS -->
-<!-- ====================================================== -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
-    <!-- ====================================================== -->
-    <!-- DEFINING DOCUMENT SETTINGS -->
-    <!-- ====================================================== -->
     <title>Birthday Card</title>
-
-    
-    <!-- ====================================================== -->
-    <!-- DEFINING DOCUMENT SETTINGS -->
-    <!-- ====================================================== -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
-    <link rel="stylesheet" href="styles.css">
-
-    
-    <!-- ====================================================== -->
-    <!-- DEFINING DOCUMENT SETTINGS -->
-    <!-- ====================================================== -->
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .card {
+            position: relative;
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h1 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .card p {
+            font-size: 16px;
+            color: #666;
+        }
+        .card img {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .card button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
-
-    
-<!-- ====================================================== -->
-<!-- DEFINING DOCUMENT SETTINGS -->
-<!-- ====================================================== -->
 <body>
-    <div class="card">
-        <div class="card-content">
-            <h2>Happy Birthday Jia Yee</h2>
-            <p>This Is Just to Test to see if it works</p>
-            <p>This Is Just to Test to see if it works</p>
-            <p>This Is Just to Test to see if it works</p>
-        </div>
-        <img src="corner-image.png" alt="Corner Image" class="card-image">
+    <div class="card" id="card1">
+        <h1>Happy Birthday Jia Yee</h1>
+        <p>Wishing you a wonderful day filled with joy and happiness!</p>
+        <img src="corner-image.png" alt="Happy Image">
+        <button onclick="showNextCard()">Next Card</button>
     </div>
+
+    <div class="card" id="card2" style="display: none;">
+        <h1>Happy Birthday Jia Yee</h1>
+        <p>May all your dreams come true on this special day!</p>
+        <img src="corner-image.png" alt="Happy Image">
+        <button onclick="showNextCard()">Next Card</button>
+    </div>
+
+    <script>
+        function showNextCard() {
+            const card1 = document.getElementById('card1');
+            const card2 = document.getElementById('card2');
+            if (card1.style.display === 'none') {
+                card1.style.display = 'block';
+                card2.style.display = 'none';
+            } else {
+                card1.style.display = 'none';
+                card2.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
