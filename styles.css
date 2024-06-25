@@ -63,7 +63,7 @@ body {
 /*--------------------------------------------------*/
 .card img {
     position: absolute;
-    top: 55%; /* Center vertically */
+    top: 57%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -20%); /* Adjust vertical position */
     width: 155px; /* Adjusted width for larger screens */
